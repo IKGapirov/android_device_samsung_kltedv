@@ -1,0 +1,2 @@
+add_lunch_combo bootleg_kltekdv-user
+add_lunch_combo bootleg_kltekdv-userdebug
