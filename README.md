@@ -2,6 +2,8 @@ Copyright 2014 - The CyanogenMod Project
 
 Copyright 2017 - The LineageOS Project
 
+Copyright 2019 - The dotOS Project
+
 Device configuration for Samsung Galaxy S5 (SM-G900I/P).
 ========================================
 

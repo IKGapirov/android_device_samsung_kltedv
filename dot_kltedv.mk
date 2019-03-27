@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2014-2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2019 The dotOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,10 +16,20 @@
 # limitations under the License.
 #
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
 $(call inherit-product, device/samsung/kltedv/full_kltedv.mk)
 
+# Inherit some common DotS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
+
+# Include Bootanimation configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+
+## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kltedv
-PRODUCT_NAME := lineage_kltedv
+PRODUCT_NAME := dot_kltedv
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+DEVICE_MAINTAINERS="IKGapirov" \
+DEVICE_MAINTAINERS="Brunowp8"
+
+DOT_BUILD_TYPE=OFFICIAL
