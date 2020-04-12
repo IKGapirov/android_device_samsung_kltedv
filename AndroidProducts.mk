@@ -1,5 +1,6 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2020 The aospOS Project
+# Copyright (C) 2020 AospExtended Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,4 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kltedv.mk
+    $(LOCAL_DIR)/aosp_kltedv.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_kltedv-user \
+    aosp_kltedv-userdebug \
+    aosp_kltedv-eng
